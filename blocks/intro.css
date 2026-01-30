@@ -1,0 +1,36 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 984px;
+  height: 983px;
+}
+
+.intro__title {
+  margin: auto;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 96px;
+  width: 720px;
+  height: 200px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.intro__subtitle {
+  width: 720px;
+  height: 72px;
+  margin-top: 32px;
+  margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  line-height: 36px;
+}
+
+.intro__image {
+  width: 984px;
+  height: 615px;
+  margin-top: 64px;
+}

@@ -1,0 +1,35 @@
+.page {
+  background-color: #2a2c2f;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 0 148px 0 148px;
+  max-width: 1280px;
+  height: 2008px;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("./fonts/Inter-Regular.woff2") format("woff2"),
+    url("./fonts/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("./fonts/Inter-Black.woff2") format("woff2"),
+    url("./fonts/Inter-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
