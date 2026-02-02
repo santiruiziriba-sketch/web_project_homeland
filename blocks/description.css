@@ -1,7 +1,8 @@
 .description {
   display: flex;
   flex-direction: column;
-  width: 830px;
+  width: 100%;
+  max-width: 830px;
   height: 607px;
   margin-top: 92px;
   margin-right: 154px;
@@ -11,7 +12,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 900;
   font-size: 54px;
-  width: 830px;
+  max-width: 830px;
   height: 173.92px;
   line-height: 58px;
   margin-top: 0;
@@ -23,7 +24,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
-  width: 738px;
+  max-width: 738px;
   height: 135.66px;
   margin-top: 39.98px;
 }
@@ -37,7 +38,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
-  width: 732px;
+  max-width: 732px;
   height: 33.91px;
   display: flex;
   flex-direction: column-reverse;
@@ -50,8 +51,45 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 168%;
-  width: 722px;
+  max-width: 722px;
   height: 181.54px;
   margin-top: 75.09px;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .description__title {
+    font-size: 49px;
+    line-height: 55px;
+    width: 100%;
+  }
+
+  .description {
+    margin-left: 24px;
+    margin-right: 24px;
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .description {
+    width: 100%;
+    margin: 64px 16px 0 16px;
+  }
+
+  .description__title {
+    font-size: 32px;
+    line-height: 35px;
+    max-width: 288px;
+  }
+
+  .description__quote {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 288px;
+  }
+
+  .description__quote-author {
+    max-width: 288px;
+  }
 }

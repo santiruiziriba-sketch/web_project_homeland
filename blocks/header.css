@@ -1,11 +1,25 @@
 .header {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .header__logo {
   margin: 0 auto;
-  padding: 49px 512.16px 76.06px 513px;
+  padding: 49px 0 76.06px 0;
   width: 254.84px;
   height: 68.94px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__logo {
+    width: 188px;
+    height: 52px;
+  }
 }

@@ -1,19 +1,22 @@
 .page {
   background-color: #2a2c2f;
   color: #ffffff;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 148px 0 148px;
-  max-width: 1280px;
-  height: 2008px;
+  max-width: 100%;
+  min-height: 100vh;
   box-sizing: border-box;
   flex: 1;
+  width: 100%;
 }
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
 }
 
 @font-face {
@@ -32,4 +35,18 @@ body {
     url("./fonts/Inter-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    max-width: 768px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page {
+    max-width: 320px;
+    padding: 0 16px;
+  }
 }
