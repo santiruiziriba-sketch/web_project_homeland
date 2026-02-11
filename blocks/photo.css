@@ -13,3 +13,12 @@
   height: auto;
   object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .photo-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 64px 24px 88px;
+    width: 720px;
+  }
+}
