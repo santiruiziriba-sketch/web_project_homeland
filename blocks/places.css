@@ -18,7 +18,7 @@
 .place__title {
   grid-area: title;
   font-size: 72px;
-  font-weight: black;
+  font-weight: bold;
   line-height: 76px;
   font-family: "Inter", sans-serif;
   margin-bottom: 48px;
@@ -80,6 +80,8 @@
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
   margin-top: 48px;
   margin-bottom: 80px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .place__button:hover {
@@ -114,7 +116,7 @@
   }
 
   .place__button {
-    width: 84%;
+    width: 72%;
   }
 }
 
@@ -159,7 +161,7 @@
   }
 
   .place__button {
-    width: 95%;
+    width: 81%;
     margin: 0 10px 50px;
   }
 }
