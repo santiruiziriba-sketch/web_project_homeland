@@ -4,119 +4,10 @@
   margin-bottom: 82px;
 }
 
-.place {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "title website"
-    "image paragraphs"
-    "button paragraphs"
-    ". paragraphs";
-  column-gap: 40px;
-}
-
-.place__title {
-  grid-area: title;
-  font-size: 72px;
-  font-weight: bold;
-  line-height: 76px;
-  font-family: "Inter", sans-serif;
-  margin-bottom: 48px;
-}
-
-.place__website {
-  grid-area: website;
-  font-family: "Inter", sans-serif;
-  align-self: end;
-  margin-bottom: 48px;
-}
-.place__url-heading {
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-  color: #aaaaaa;
-}
-
-.place__artist {
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  margin: 0 auto;
-}
-
-.place__image {
-  grid-area: image;
-  width: 100%;
-  font-family: "Inter", sans-serif;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.place__image:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-.place__paragraphs {
-  grid-area: paragraphs;
-  font-family: "Inter", sans-serif;
-}
-
-.place__paragraph {
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  line-height: 163%;
-  margin-top: 0;
-}
-
-.place__button {
-  grid-area: button;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  background: linear-gradient(90deg, #0278fe 0%, #003a88 99.9%);
-  color: white;
-  border: none;
-  padding: 13px 20px;
-  border-radius: 4px;
-  width: 70%;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
-  margin-top: 48px;
-  margin-bottom: 80px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.place__button:hover {
-  opacity: 0.25;
-  cursor: pointer;
-  border-radius: 4px;
-  border: black 1px solid;
-}
-
 @media screen and (max-width: 768px) {
   .places {
     width: 720px;
     margin: 0 24px 90px;
-  }
-
-  .place {
-    column-gap: 28px;
-  }
-
-  .place__title {
-    font-size: 42px;
-    line-height: 46px;
-  }
-
-  .place__image {
-    width: 340px;
-    height: 340px;
-  }
-
-  .place__paragraph {
-    font-size: 16px;
-  }
-
-  .place__button {
-    width: 72%;
   }
 }
 
@@ -124,44 +15,5 @@
   .places {
     width: 288px;
     margin: 0 0 65px;
-  }
-
-  .place {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "title"
-      "website"
-      "image"
-      "paragraphs"
-      "button";
-    row-gap: 30px;
-  }
-
-  .place__title {
-    font-size: 32px;
-    line-height: 35px;
-    margin: auto 16px 0;
-  }
-
-  .place__website {
-    font-size: 18px;
-    line-height: 22px;
-    margin: 0 16px 0;
-  }
-
-  .place__image {
-    width: 305px;
-    margin: 0 auto;
-    box-shadow: none;
-  }
-
-  .place__paragraph {
-    font-size: 16px;
-    margin: 0 16px 25px;
-  }
-
-  .place__button {
-    width: 81%;
-    margin: 0 10px 50px;
   }
 }
